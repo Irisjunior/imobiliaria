@@ -31,17 +31,11 @@
         <div class="card">
             <h2>Encontre seu imóvel ideal</h2>
             <div class="busc">
-                <select class="busca-imovel" name="venda_ou_aluga">
+                <select style="width: 150px;" class="busca-imovel" name="venda_ou_aluga">
                     <option value="volvo">Venda</option>
                     <option value="saab">Aluguel</option>
                 </select>
-                <select class="busca-imovel" name="localizacao">
-                    <option disabled selected value="local">Localização do imovel</option>
-                    <option value="zn">Zona norte</option>
-                    <option value="zo">Zona oeste</option>
-                    <option value="zs">Zona sul</option>
-                    <option value="bf">Baixada</option>
-                </select>
+                <input type="search" name="" placeholder="Localização do imóvel"  class="busca-imovel"> <div id="lupa" onclick="alert('ok :)');"><i class="fas fa-search"></i></div>
 
             </div>
 
@@ -54,12 +48,12 @@
             </div>
 
             <div class="tipo">
-                <input type="range" min="0" max="100" value="50" class="bar">
+                <input style="height:80px;" id="range" type="range" min="0" max="100" value="50" class="bar">
                 <input class="avancados" type="search" name="#" placeholder="Quartos" id="quartos">
             </div>
 
             <div class="botao-class">
-                <button id="botao"><a href="/pagina de busca/busca.html">Saiba mais</a> </button>
+                <button id="botao"><a href="/pagina de busca/busca.html">Busque Agora</a> </button>
             </div>
         </div>
     </div>

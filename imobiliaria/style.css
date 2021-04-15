@@ -102,12 +102,13 @@ body {
     background-image: url("../img/imovel.jpg");
 }
 
-/*card-----*/
+/*card---------------------------------------------------------------------------------*/
 .container {
-    text-align: center;
+   
     display: flex;
     flex-direction:row-reverse;
     align-items: flex-end;
+    justify-content:space-between;
     width: 100%;
     height: 600px;
     
@@ -121,22 +122,37 @@ body {
 }
 
 .card {
+    
     padding: 10px;
+    margin-right: 5%;
     margin: 2px solid #000;
     background-color: var(--cor01);
-    width: 420px;
+    width: 500px;
     height: 450px;
 
 }
+.card h2{
+    display: flex;
+    justify-content:center;
+}
+
+#lupa{
+    width: 30px;
+    height: 25px;
+    float:left;
+    margin:3px 0px 0px -25px;
+    cursor:pointer;
+    padding-right: 5px;
+ }
 
 .busc {
-    height: 40px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-/*filtros avançados*/
+/*filtros avançados --------------------------------------------------------------------*/
 .h4 {
     display: flex;
     font-size: 18px;
@@ -151,10 +167,19 @@ body {
     align-items: center;
 
 }
-input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #ccc;
-    counter-reset: red;
+
+
+
+#range{
+    -webkit-appearance: none;
+    width:150px;
+    height:2%;
+    background:#ca743a;
+    outline: none;
+    border-radius: 6px;
+
 }
+
 
 .avancados {
     text-align: center;
@@ -164,66 +189,64 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 .busca-imovel {
-    border-radius: 6px;
-    height: 30px;
+    border-radius: 3px;
+    height: 40px;
     width: 100%;
     text-align: center;
 }
 
 .botao-class {
-    margin-right: 0;
+    display: flex;
+    flex-direction: row-reverse;
     width: 100%;
     height: 150px;
     align-items: center;
-    margin-top: 80px;
-    margin-left: 95px;
+    
 
 }
 
 #botao {
     background-color: var(--marron-medio);
     color: var(--cor01);
+    height:40px;
+    width: 250px;
+    
     border-radius: 3px;
-    padding: 15px;
     cursor: pointer;
     display: inline-block;
-    font-size: 18px
+    font-size: 18px;
 }
 
 @media (max-width: 1350px) {
     .container {
         text-align: center;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction:row-reverse;
+        align-items: flex-end;
+        justify-content:space-around;
         width: 100%;
         height: 600px;
-        margin-left: 25rem;
         padding: 1rem;
     }
+   
 }
 
 @media (max-width: 1000px) {
     .container {
         text-align: center;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction:row-reverse;
+        align-items: flex-end;
+        justify-content:space-around;
         width: 100%;
         height: 600px;
-        margin-left: 8rem;
+        
         padding: 1rem;
     }
 }
 
 @media (max-width: 700px) {
-    .container {
-        text-align: center;
-        display: flex;
-        flex-direction: column-reverse;
-        width: 100%;
-        height: 900px;
-        margin-left: 1rem;
-        padding: 1rem;
-    }
+   
 
     .containerh {
         width: 658px;
