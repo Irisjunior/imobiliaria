@@ -104,7 +104,6 @@ body {
 
 /*card---------------------------------------------------------------------------------*/
 .container {
-   
     display: flex;
     flex-direction:row-reverse;
     align-items: flex-end;
@@ -136,14 +135,24 @@ body {
     justify-content:center;
 }
 
-#lupa{
+.lupa{
     width: 30px;
     height: 25px;
     float:left;
     margin:3px 0px 0px -25px;
     cursor:pointer;
     padding-right: 5px;
- }
+}
+.seta{
+    width: 30px;
+    height: 25px;
+    float:left;
+    margin:3px 0px 0px -150px;
+    cursor:pointer;
+    padding-right: 5px;
+}
+
+
 
 .busc {
     height: 50px;
@@ -167,18 +176,26 @@ body {
     align-items: center;
 
 }
-
-
-
-#range{
+input[type=range] {
     -webkit-appearance: none;
-    width:150px;
-    height:2%;
-    background:#ca743a;
-    outline: none;
-    border-radius: 6px;
+    appearance: none;
+    display: inline-block;
+    width: 13em;
+    height: 0.5em;
 
+    left: 4em;
+    border-radius: 5px;
+    background-color:var(--marron-escuro);
+    outline: none;
 }
+
+input[type=range]::-webkit-slider-thumb{
+    border-radius: 50%;
+}
+i{
+    color:var(--marron-medio);
+}
+
 
 
 .avancados {
@@ -281,15 +298,3 @@ body {
 
 }
 
-footer {
-    background-color: var(--marron-claro);
-    margin: 0;
-    padding: 10px;
-    margin-top: 200px;
-    display: flex;
-    flex-direction: row-reverse;
-
-}
-footer p {
-    margin: 0;
-}

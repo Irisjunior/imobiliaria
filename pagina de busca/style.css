@@ -309,19 +309,30 @@ button {
 
 }
 
+
+
 footer {
-    background-color: var(--marron-claro);
+    width: 100vw;
+    height: 30px;
+    background-image: linear-gradient(var(--marron-medio)  ,var(--marron-escuro));
     margin: 0;
     padding: 10px;
     margin-top: 200px;
     display: flex;
-    flex-direction: row-reverse;
+    align-items: center;
+    justify-content:center;
 
 }
-
 footer p {
+   color: white;
+    padding:0;
     margin: 0;
+    padding-right: 2%;
+    font-size: 16PX;
+   
 }
+
+
 
 @media(max-width: 853px) {
     .cards {

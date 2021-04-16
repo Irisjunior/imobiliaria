@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imobiliaria-home</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -35,7 +35,7 @@
                     <option value="volvo">Venda</option>
                     <option value="saab">Aluguel</option>
                 </select>
-                <input type="search" name="" placeholder="Localização do imóvel"  class="busca-imovel"> <div id="lupa" onclick="alert('ok :)');"><i class="fas fa-search"></i></div>
+                <input type="search" name="" placeholder="Localização do imóvel"  class="busca-imovel"> <div class="lupa"><i class="fas fa-search"></i></div>
 
             </div>
 
@@ -44,12 +44,12 @@
             </div>
             <div class="tipo">
                 <input class="avancados" type="search" name="#" placeholder="Tipo de imóvel" id="tipoimovel">
-                <input class="avancados" type="search" name="#" placeholder="Banheiros" id="banheiros">
+                <input class="avancados" type="search" name="#" placeholder="Banheiros" id="banheiros"><div class="seta"><i class="fas fa-chevron-down"></i></i></div>
             </div>
-
+        
             <div class="tipo">
-                <input style="height:80px;" id="range" type="range" min="0" max="100" value="50" class="bar">
-                <input class="avancados" type="search" name="#" placeholder="Quartos" id="quartos">
+                <input type="range" id="campo" min="0" max="100" value="50">
+                <input class="avancados" type="search" name="#" placeholder="Quartos" id="quartos"><div class="seta"><i  class="fas fa-chevron-down"></i></i></div>
             </div>
 
             <div class="botao-class">
@@ -58,10 +58,7 @@
         </div>
     </div>
     </section>
-    <footer>]
-        <p>Todos os direitos reservados </p>
-    </footer>
-
+   
 </body>
 
 </html>
