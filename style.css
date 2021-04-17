@@ -31,6 +31,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .containerh {
@@ -176,27 +177,34 @@ body {
     align-items: center;
 
 }
+.valor{
+    float:left;
+    position: absolute;
+    margin-bottom: 15px;
+    padding-bottom: 30px;
+    color: var(--marron-medio);
+}
 input[type=range] {
     -webkit-appearance: none;
     appearance: none;
     display: inline-block;
-    width: 13em;
-    height: 0.5em;
-
+    width: 15em;
+    height: 0.2em;
     left: 4em;
     border-radius: 5px;
-    background-color:var(--marron-escuro);
+    background-color:var(--marron-medio);
     outline: none;
+    
 }
-
-input[type=range]::-webkit-slider-thumb{
-    border-radius: 50%;
-}
-i{
-    color:var(--marron-medio);
-}
-
-
+#campo::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background:var(--marron-escuro); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 18px;
+  }
 
 .avancados {
     text-align: center;
@@ -210,6 +218,7 @@ i{
     height: 40px;
     width: 100%;
     text-align: center;
+    margin:0;
 }
 
 .botao-class {
