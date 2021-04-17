@@ -132,6 +132,7 @@ body {
 
 }
 .card h2{
+    color: var(--marron-medio);
     display: flex;
     justify-content:center;
 }
@@ -140,6 +141,7 @@ body {
     width: 30px;
     height: 25px;
     float:left;
+    color:var(--marron-medio);
     margin:3px 0px 0px -25px;
     cursor:pointer;
     padding-right: 5px;
@@ -201,7 +203,7 @@ input[type=range] {
     appearance: none;
     width: 15px; /* Set a specific slider handle width */
     height: 15px; /* Slider handle height */
-    background:var(--marron-escuro); /* Green background */
+    background:var(--marron-medio); /* Green background */
     cursor: pointer; /* Cursor on hover */
     border-radius: 18px;
   }
@@ -214,11 +216,18 @@ input[type=range] {
 }
 
 .busca-imovel {
-    border-radius: 3px;
+    border: 0;
+    border-left: solid 1px;
+    border-radius: 0px 5px 5px 0px;
     height: 40px;
     width: 100%;
     text-align: center;
     margin:0;
+}
+#venda{
+    width: 150px;
+    border-left: 0px;
+    border-radius: 5px 0px 0px 5px;
 }
 
 .botao-class {
@@ -243,7 +252,7 @@ input[type=range] {
     font-size: 18px;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1280px) {
     .container {
         text-align: center;
         display: flex;
@@ -263,10 +272,9 @@ input[type=range] {
         display: flex;
         flex-direction:row-reverse;
         align-items: flex-end;
-        justify-content:space-around;
         width: 100%;
+        justify-content:space-around;
         height: 600px;
-        
         padding: 1rem;
     }
 }
@@ -275,8 +283,10 @@ input[type=range] {
    
 
     .containerh {
+        display: flex;
         width: 658px;
         height: 180px;
+
         flex-wrap: nowrap;
         flex-direction: column;
         justify-content: center;

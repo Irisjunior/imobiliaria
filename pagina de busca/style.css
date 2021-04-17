@@ -20,8 +20,9 @@ h5 {
 
 }
 
-select,
-button {
+select
+ {
+    border:solid 1px rgb(218, 216, 216);
     cursor: pointer;
 }
 
@@ -192,20 +193,40 @@ body {
     margin-left: 10px;
 }
 
+#tipo-imovel{
+    width:170px;
+}
+#banheiros{
+    width: 120px;
+    align-items: center;   
+}
+
+#quartos{
+    width: 120px;
+    align-items: center;   
+}
+
 button {
-    background-color: var(--marron-escuro);
+    background-color: var(--marron-medio);
+    border: 0;
     color: var(--cor01);
+    width:160px;
     border-radius: 5px;
     padding: 5px;
     height: 30px;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .maisfiltros p{
-    color: var(--marron-escuro);
+    color: var(--marron-medio);
     margin: 0;
     padding: 5px;
     margin-right: 50px;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-right:20%;
 }
 
 .maisfiltros {
@@ -213,6 +234,7 @@ button {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
+    
     
 
 }
@@ -243,7 +265,7 @@ button {
 .card {
     background-color: rgba(#857366);
     height: 400px;
-    box-shadow: 5px 5px 5px black;
+   
     border-radius: 5px 5px 5px 5px;
     margin: 2%;
     width: 350px;
@@ -267,7 +289,7 @@ button {
 }
 
 .meio {
-    background-color: #857366;
+    background-color:white;
     width: 350px;
     height: 175px;
 
@@ -295,16 +317,20 @@ button {
 
 
 .baixo {
-    background-color: #857366;
+    background-color:white;
     width: 350px;
     height: 50px;
     display: flex;
     flex-direction: row-reverse;
     border-radius: 0px 0px 5px 5px;
+    
 }
 
+
+
 .detalhes {
-    width: 90px;
+    margin-right: 10px;
+    width: 160px;
     height: 30px;
 
 }
