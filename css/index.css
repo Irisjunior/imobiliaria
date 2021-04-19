@@ -153,6 +153,7 @@ body {
     margin:3px 0px 0px -150px;
     cursor:pointer;
     padding-right: 5px;
+    color: var(--marron-medio);
 }
 
 
@@ -177,8 +178,8 @@ body {
     height: 50px;
     justify-content: space-between;
     align-items: center;
-
 }
+
 .valor{
     float:left;
     position: absolute;
@@ -186,6 +187,8 @@ body {
     padding-bottom: 30px;
     color: var(--marron-medio);
 }
+
+
 input[type=range] {
     -webkit-appearance: none;
     appearance: none;
@@ -223,6 +226,9 @@ input[type=range] {
     width: 100%;
     text-align: center;
     margin:0;
+}
+#quartos{
+    margin-right: 15px;
 }
 #venda{
     width: 150px;
@@ -315,5 +321,12 @@ input[type=range] {
         text-decoration: none;
     }
 
+}
+
+@media (max-width: 575px){
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
 }
 

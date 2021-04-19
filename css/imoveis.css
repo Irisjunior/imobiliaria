@@ -52,15 +52,7 @@ header {
     justify-content: space-between;
 }
 
-.containerh {
-    
-    width: 100%;
-    height: 5.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-}
 
 h3 {
     padding: 1rem;
@@ -69,7 +61,7 @@ h3 {
 
 header img {
     padding: 1rem;
-    margin-left: 2rem;
+    
 }
 
 .cont a {
@@ -108,48 +100,7 @@ body {
     background-color: var(--cor01);
 }
 
-@media(max-width:600px) {
-    .cont a {
-        padding: 5px;
-    }
 
-    .cont {
-        cursor: pointer;
-        display: flex;
-        font-size: 0.8rem;
-        padding: 2px;
-        margin: 0;
-        width: 5rem;
-        height: 25px;
-        align-items: center;
-        justify-content: space-evenly;
-
-    }
-
-    .telefone {
-        padding-bottom: 2px;
-    }
-
-    header img {
-        padding: 0rem;
-        margin-left: 0rem;
-    }
-
-    header {
-        display: flex;
-        width: 100%;
-        height: 10rem;
-        align-items: center;
-    }
-
-    .containerh {
-        
-        justify-content: flex-start;
-        height: 10rem;
-        align-items: center;
-
-    }
-}
 
 /*------------------------------------------------------------*/
 
@@ -168,9 +119,19 @@ body {
 }
 
 .busca-imovel {
-    width: 20rem;
+    width: 30rem;
     height: 30px;
-    border-radius: 5px;
+    border: 0;
+
+}
+.lupa{
+    width: 30px;
+    height: 25px;
+    float:left;
+    color:var(--marron-medio);
+    margin:3px 0px 0px -25px;
+    cursor:pointer;
+    padding-right: 5px;
 }
 
 /*-----------------------------------------*/
@@ -223,10 +184,9 @@ button {
     color: var(--marron-medio);
     margin: 0;
     padding: 5px;
-    margin-right: 50px;
     text-decoration: underline;
     font-weight: bold;
-    margin-right:20%;
+    margin-right:30%;
 }
 
 .maisfiltros {
@@ -247,7 +207,7 @@ button {
     font-size: 16px;
 }
 
-/*------------CARD----------------------*/
+/*------------CARD-----------------------------------------------------*/
 
 .cards {
     display: flex;
@@ -263,14 +223,15 @@ button {
 
 
 .card {
-    background-color: rgba(#857366);
+    background: white;
     height: 400px;
-   
+    color: var(--marron-medio);
     border-radius: 5px 5px 5px 5px;
     margin: 2%;
-    width: 350px;
+    width: 300px;
+    padding-bottom: 1.5rem;
 
-}
+} 
 
 .media {
 
@@ -284,15 +245,18 @@ button {
 .media img {
 
     height: 175px;
-    width: 350px;
+    width: 300px;
     border-radius: 5px 5px 0 0;
 }
 
 .meio {
     background-color:white;
-    width: 350px;
+    width: 300px;
     height: 175px;
 
+}
+.desc-imovel{
+    font-weight: 700;
 }
 
 
@@ -306,19 +270,22 @@ button {
     flex-direction: row;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:left;
+    width:250px;
 }
 
 .icones i {
     margin-left: 8px;
-    padding: 5px;
+    padding-left: 15px;
     size: 3ex;
 }
-
+.icones p{
+    padding-left: 10px;
+}
 
 .baixo {
     background-color:white;
-    width: 350px;
+    width: 300px;
     height: 50px;
     display: flex;
     flex-direction: row-reverse;
@@ -339,8 +306,8 @@ button {
 
 footer {
     width: 100vw;
-    height: 30px;
-    background-image: linear-gradient(var(--marron-medio)  ,var(--marron-escuro));
+    height: 20px;
+    background-color: var(--marron-claro);
     margin: 0;
     padding: 10px;
     margin-top: 200px;
@@ -354,18 +321,57 @@ footer p {
     padding:0;
     margin: 0;
     padding-right: 2%;
-    font-size: 16PX;
+    font-size: 14PX;
    
 }
 
+/*-------------------------------RESPONSIVIDADE---------------------------------*/
 
 
-@media(max-width: 853px) {
-    .cards {
 
+@media(max-width:600px) {
+    .cont a {
+        padding: 5px;
+    }
+
+    .cont {
+        cursor: pointer;
+        display: flex;
+        font-size: 0.8rem;
+        padding: 2px;
+        margin: 0;
+        width: 5rem;
+        height: 25px;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+    .avan{
+    
+        flex-wrap: wrap;
+    }
+
+    .telefone {
+        padding-bottom: 1rem;
+    }
+
+    header img {
+        width: 120px;
+        padding: 0rem;
+        margin-left: 0rem;
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+        height: 12rem;
+        align-items: center;
         flex-direction: column;
-        justify-content: space-between;
-        margin: 10px;
-
+    }
+    .cont{
+        width: 60%;
+    }
+    .card{
+        padding-bottom: 1.5rem;
     }
 }

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imobiliaria-home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
         <div class="containerh">
             <img src="../img/Logo_PNG_1.png" alt="logo imobiliaria">
             <div class="cont">
-                <div class="item_1"><a href="/index.html"><b>Inicio</b></a></div>
+                <div class="item_1"><a href="./index.html"><b>Inicio</b></a></div>
                 <div class="item_2"><a href="#">Sobre</a></h3>
                 </div>
                 <div class="item_3"><a href="#">Contato</a></h3>
@@ -50,11 +50,15 @@
             <div class="tipo">
                 <p class="valor">Valor</p>
                 <input type="range" id="campo" min="0" max="100" value="50">
+                <select  id="venda" class="busca-imovel" name="venda_ou_aluga">
+                    <option value="venda">Venda</option>
+                    <option value="aluga">Aluguel</option>
+                </select>
                 <input class="avancados" type="search" name="#" placeholder="Quartos" id="quartos"><div class="seta"><i class="fas fa-chevron-down"></i></i></div>
             </div>
 
             <div class="botao-class">
-                <button id="botao"><a href="/pagina de busca/busca.html">Busque Agora</a> </button>
+                <button id="botao"><a href="./imoveis.html">Busque Agora</a> </button>
             </div>
         </div>
     </div>
