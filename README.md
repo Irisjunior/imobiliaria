@@ -27,7 +27,7 @@ https://git-scm.com/downloads
 ```
 
 
-### 🔧 Como rodar a pagina
+### 🔧 Como rodar a página
 
 - No Github clique em Code  <br> 
   ![CODE](/CODE.jpg)  
