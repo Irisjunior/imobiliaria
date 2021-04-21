@@ -65,18 +65,19 @@ header img {
 }
 
 .cont a {
+    margin-left: 18px;
     padding: 0.4rem;
     color: #332217;
 }
 
 .cont {
+    
     flex-grow: 2;
     width: 12rem;
     height: 80px;
     display: flex;
     font-size: 1rem;
     align-items: center;
-
 
 }
 
@@ -94,6 +95,7 @@ header img {
     align-items: center;
     padding: 0.5rem;
     font-size: 1.2rem;
+    margin-right: 2%;
 }
 
 body {
@@ -157,7 +159,7 @@ body {
 #tipo-imovel{
     width:170px;
 }
-#banheiros{
+.opcoes{
     width: 120px;
     align-items: center;   
 }
@@ -347,8 +349,21 @@ footer p {
 
     }
     .avan{
-    
+        height: 10rem;
         flex-wrap: wrap;
+    }
+    .avancados{
+        margin: 0%;
+
+    }
+    .maisfiltros{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .maisfiltros p{
+        margin: 0%;
     }
 
     .telefone {
