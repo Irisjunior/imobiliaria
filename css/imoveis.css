@@ -179,7 +179,12 @@ button {
     height: 30px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
 
+button:hover{
+    background-color: var(--marron-escuro)
+    
 }
 
 .maisfiltros p{
@@ -225,6 +230,7 @@ button {
 
 
 .card {
+
     background: white;
     height: 400px;
     color: var(--marron-medio);
@@ -232,8 +238,14 @@ button {
     margin: 2%;
     width: 300px;
     padding-bottom: 1.5rem;
+    
 
 } 
+
+.card:hover{
+    box-shadow: 20px 20px 18px rgb(182, 182, 182)
+    
+}
 
 .media {
 
@@ -249,6 +261,12 @@ button {
     height: 175px;
     width: 300px;
     border-radius: 5px 5px 0 0;
+    transition: width 2s transform 2s;
+}
+
+img:hover{
+    transform: translateY(-30);
+    
 }
 
 .meio {
