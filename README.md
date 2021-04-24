@@ -19,14 +19,14 @@ Frontend do site de vendas de imóveis onde o usuário pode filtrar os imóveis 
 ![](./print/mobile-exemplo.jpg)
 
 ## 📋 Pré-requisitos
-- Você precisa de um navegador instalado em seu computador. Recomenda-se o uso do 
+Você precisa de um navegador instalado em seu computador. Recomenda-se o uso do 
 Antes de qualquer coisa, você precisa ter instaldo o [Google Chrome](https://www.google.com/intl/pt-BR/chrome) e [Git](https://git-scm.com/downloads). Para Instalar o siga o passo a passo de cada link listado abaixo:
 
 
 ## 🔧 Como rodar a página
 
-- Abra o terminal Git Bash no diretorio em que deseja salvar o projeto e cole o seguinte comando:
-  
+Abra o terminal Git Bash no diretorio em que deseja salvar o projeto e cole o seguinte comando:
+ 
 ```
 https://github.com/Irisjunior/imobiliaria.git
 ```
