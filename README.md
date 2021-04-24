@@ -9,6 +9,7 @@ Frontend do site de vendas de imóveis onde o usuário pode filtrar os imóveis 
 - HTML5 -  Como linguagem de marcação.
 - CSS3  -  Para estilização de todos os componentes.  
 - Design Responsivo - Media Queries, Breakpoints, Medidas Relativas.
+- Figma - Prototipado por [Thayse Fernandes](https://www.linkedin.com/in/thaysedasilva/)
 
  🚧  Javascript  Em construção...  🚧
 
