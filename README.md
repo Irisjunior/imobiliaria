@@ -14,7 +14,6 @@ Frontend do site de vendas de imóveis onde o usuário pode filtrar os imóveis 
 
 ##  Preview do projeto 
 
-
 ![](./print/75%menor-home.jpg)
 ![](./print/Captura%20de%20tela%202021-04-20%20221214%20(1).jpg)
 ![](./print/mobile-exemplo.jpg)
@@ -22,9 +21,6 @@ Frontend do site de vendas de imóveis onde o usuário pode filtrar os imóveis 
 ## 📋 Pré-requisitos
 - Você precisa de um navegador instalado em seu computador. Recomenda-se o uso do 
 Antes de qualquer coisa, você precisa ter instaldo o [Google Chrome](https://www.google.com/intl/pt-BR/chrome) e [Git](https://git-scm.com/downloads). Para Instalar o siga o passo a passo de cada link listado abaixo:
-
-- [Google Chrome](https://www.google.com/intl/pt-BR/chrome)
-- [Git](https://git-scm.com/downloads)
 
 
 ## 🔧 Como rodar a página
