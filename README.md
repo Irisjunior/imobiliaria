@@ -13,7 +13,7 @@ Frontend do site de vendas de imóveis onde o usuário pode filtrar os imóveis 
 
  🚧  Javascript  Em construção...  🚧
 
-##  Preview do projeto 
+## 🖥 Preview do projeto 
 
 ![](./print/75%menor-home.jpg)
 ![](./print/Captura%20de%20tela%202021-04-20%20221214%20(1).jpg)
