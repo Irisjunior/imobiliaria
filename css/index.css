@@ -309,7 +309,7 @@ input[type=range] {
 
     .containerh {
         display: flex;
-        width: 658px;
+        width: 100%;
         height: 200px;
 
         flex-wrap: nowrap;
@@ -353,6 +353,9 @@ input[type=range] {
 
 
 @media (max-width: 460px) {
+    .containerh{
+        width: 100%;
+    }
     .card{
         border-radius: 5px;
         height:650px;
