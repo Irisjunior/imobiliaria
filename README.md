@@ -16,8 +16,8 @@ Frontend do site de vendas de imóveis onde o usuário pode filtrar os imóveis 
 ## 🖥 Preview do projeto 
 
 ![](./print/captura%20home.png)
-![](./print/Captura%20de%20tela%202021-04-20%20221214%20(1).jpg)
-![](./print/mobile-exemplo.jpg)
+![](./print/Captura%20de%20tela%202021-04-25%20175311.png)
+![](./print/Captura%20de%20tela%202021-04-25%20181846.png)
 
 ## 📋 Pré-requisitos
 Você precisa de um navegador instalado em seu computador. Recomenda-se o uso do 
