@@ -20,7 +20,7 @@ Frontend do site de vendas de imóveis onde o usuário pode filtrar os imóveis 
 ![](./print/Captura%20de%20tela%202021-04-25%20181846.png)
 
 ## 📋 Pré-requisitos
-Você precisa de um navegador instalado em seu computador. Recomenda-se o uso do 
+
 Antes de qualquer coisa, você precisa ter instaldo o [Google Chrome](https://www.google.com/intl/pt-BR/chrome) e [Git](https://git-scm.com/downloads). Para Instalar o siga o passo a passo de cada link listado abaixo:
 
 
