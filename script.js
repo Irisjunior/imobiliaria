@@ -1,45 +1,45 @@
-onload = function (params) {
+//onload = function(params) {
   //Dados que vamos consumir
   const imoveis = [
     {
-      name: "mansao cidade",
+      name: "mansao",
       valor: 650.0,
-      tipo: "venda",
+      tipo: "Venda",
       banheiros: 2,
       quartos: 3,
     },
     {
       name: "mansao praia",
       valor: 480.0,
-      tipo: "aluguel",
+      tipo: "Aluguel",
       banheiros: 2,
       quartos: 2,
     },
     {
       name: "mansao ilha",
       valor: 470.0,
-      tipo: "venda",
+      tipo: "Venda",
       banheiros: 2,
       quartos: 3,
     },
     {
       name: "chale campo",
       valor: 400.0,
-      tipo: "aluguel",
+      tipo: "Aluguel",
       banheiros: 2,
       quartos: 4,
     },
     {
       name: "chale montanha",
       valor: 450.0,
-      tipo: "venda",
+      tipo: "Venda",
       banheiros: 2,
       quartos: 3,
     },
     {
       name: "mansao centro",
       valor: 650.0,
-      tipo: "aluguel",
+      tipo: "Aluguel",
       banheiros: 2,
       quartos: 2,
     },
@@ -53,7 +53,7 @@ onload = function (params) {
    * JSON Parse -> Converte a String no formato original de Array/Objeto
    * 
    */
-  // localStorage.setItem("imoveis", JSON.stringify(imoveis));
+   localStorage.setItem("imoveis", JSON.stringify(imoveis));
   
 
   /* Explicação de Métodos
@@ -77,7 +77,7 @@ onload = function (params) {
   
   // Gera o HTML do Meu Card com Informações Dinâmicas (ESTUDAR FUNÇÕES E SEUS USOS)
 
-  function geraCard(nome, valor, quantidade_banheiros){
+  function geraCard(nome, valor,banheiros,quartos,tipo){
     return `
       <div class="card">
 
@@ -86,13 +86,15 @@ onload = function (params) {
         </div>
         <div class="meio">
             <h4>${nome}</h4>
-            <p class="valor">${valor}R$ 400.000,00</p>
+            <p class="valor">R$ ${valor}.000</p>
             <p class="desc-imovel">Descrição do imóvel.</p>
             <div class="icones">
                 <h2><i class="fas fa-bed"></i></h2>
-                <p>${quantidade_banheiros}</p>
+                <p>${quartos}</p>
                 <h2><i class="fas fa-toilet"></i></h2>
-                <p>03</p>
+                <p>${banheiros}</p>
+                <p><h4>${tipo}</h4></p>
+
             </div>
         </div>
         <div class="baixo">
@@ -103,26 +105,36 @@ onload = function (params) {
   }
 
   let HTML = '';
-
+  const busca =document.getElementById("search");
   // LOOP pra Acessar as Informações de Cada Card e poder enviar na função que gera o card (tudo de uma vez só, diferente do exemplo abaixo)
   //Ex.: HTML += geraCard(imoveis[0].nome, imoveis[0].valor, imoveis[0].banheiros)
   //Ex.: HTML += geraCard(imoveis[1].nome, imoveis[1].valor, imoveis[1].banheiros)
-  imoveis.map(index => {
-    HTML += geraCard(index.name, index.valor, index.banheiros)
+  const imoveisMap = imoveis.map(index => {
+    HTML += geraCard(index.name, index.valor, index.banheiros,index.quartos,index.tipo)
+    if (index.name === busca.value) {
+      return HTML;
+    }
   });
+  
 
   // Inserindo cards na div que você quer exibir
   document.getElementById("card-main").innerHTML = HTML;
 
-  // localStorage.setItem("imoveis", imoveis);
-  // console.log('Json Stringify')
-  // console.log(localStorage.getItem('imoveis_stringify'))
-  // console.log('Puro')
-  // console.log(localStorage.getItem('imoveis'))
-  // console.log('Json Parse')
-  // console.log(JSON.parse(localStorage.getItem('imoveis_stringify')))
+   //localStorage.setItem("imoveis", imoveis);
+   //console.log('Json Stringify')
+   //console.log(localStorage.getItem('imoveis_stringify'))
+   //console.log('Puro')
+   //console.log(localStorage.getItem('imoveis'))
+   //console.log('Json Parse')
+   //console.log(JSON.parse(localStorage.getItem('imoveis_stringify')))
 
-  // Função para Input de Busca
+  // Função para Input de Busca 
+ 
+  function pesquisar() {
+    console.log(HTML);
+    
+    }
+  
 
   // Função que gera a estrutura do Card
   
@@ -157,12 +169,10 @@ onload = function (params) {
   //   })
   // );
   // document.getElementsByClassName("cards").innerHTML = HTML;
-};
+  
+    
+  
+//}
 
-function pesquisar() {
-  const value = document.getElementById("search").value;
 
-  if (value.lenth > 0) {
-    const imoveis = JSON.parse(localStorage.getItem("imoveis"));
-  }
-}
+
